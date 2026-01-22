@@ -49,8 +49,11 @@ backup.py --repo user@host:/path/repo --list
 # Delete all archives
 backup.py --repo user@host:/path/repo --clear-all
 ```
+Use `--password=you_password` for auto password insert.
+Use `--target /home/user` for user directory.
 
-Logs and state data are stored in `/root/.backup.py`.
+
+Logs and state data are stored in `/root/.backup.py` or use `--log`
 
 ***
 
@@ -107,7 +110,10 @@ backup.py --repo user@host:/path/repo --list
 backup.py --repo user@host:/path/repo --clear-all
 ```
 
-Логи и состояние системы сохраняются в `/root/.backup.py`.
+Use `--password=you_password` for auto password insert.
+Use `--target /home/user` for user directory.
+
+Логи и состояние системы сохраняются в `/root/.backup.py` или используй `--log=/you_catalog`
 
 ***
 
