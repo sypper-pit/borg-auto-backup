@@ -54,8 +54,6 @@ Logs and state data are stored in `/root/.backup.py`.
 
 ***
 
-#### Tags
-`python` `backup` `borgbackup` `linux` `automation` `docker` `postgresql` `mysql` `devops` `system-backup`
 
 ***
 
