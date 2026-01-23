@@ -28,7 +28,6 @@ Supports Docker service control, MySQL/PostgreSQL dumps, system package and serv
 
 #### Installation
 ```bash
-sudo apt install python3 borgbackup
 chmod +x backup.py
 sudo mv backup.py /usr/local/bin/backup.py
 ```
@@ -88,7 +87,6 @@ Logs and state data are stored in `/root/.backup.py` or use `--log`
 
 #### Установка
 ```bash
-sudo apt install python3 borgbackup
 chmod +x backup.py
 sudo mv backup.py /usr/local/bin/backup.py
 ```
@@ -110,8 +108,9 @@ backup.py --repo user@host:/path/repo --list
 backup.py --repo user@host:/path/repo --clear-all
 ```
 
-Use `--password=you_password` for auto password insert.
-Use `--target /home/user` for user directory.
+Используй `--password=you_password` для автоматического пароля.
+
+Параметр `--target /home/user` указывает куда распоковать.
 
 Логи и состояние системы сохраняются в `/root/.backup.py` или используй `--log=/you_catalog`
 
