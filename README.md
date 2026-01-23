@@ -37,16 +37,16 @@ sudo mv backup.py /usr/local/bin/backup.py
 #### Usage
 ```bash
 # Full system backup
-backup.py --repo user@host:/path/repo --key ~/.ssh/id_rsa --backup --all
+backup.py --repo ssh://user@host:/path/repo --key ~/.ssh/id_rsa --backup --all
 
 # Restore system
-backup.py --repo user@host:/path/repo --key ~/.ssh/id_rsa --restore --all
+backup.py --repo ssh://user@host:/path/repo --key ~/.ssh/id_rsa --restore --all
 
 # List existing archives
-backup.py --repo user@host:/path/repo --list
+backup.py --repo ssh://user@host:/path/repo --list
 
 # Delete all archives
-backup.py --repo user@host:/path/repo --clear-all
+backup.py --repo ssh://user@host:/path/repo --clear-all
 ```
 Use `--password=you_password` for auto password insert.
 Use `--target /home/user` for user directory.
@@ -96,16 +96,16 @@ sudo mv backup.py /usr/local/bin/backup.py
 #### Использование
 ```bash
 # Полный бэкап системы
-backup.py --repo user@host:/path/repo --key ~/.ssh/id_rsa --backup --all
+backup.py --repo ssh://user@host:/path/repo --key ~/.ssh/id_rsa --backup --all
 
 # Восстановление системы
-backup.py --repo user@host:/path/repo --key ~/.ssh/id_rsa --restore --all
+backup.py --repo ssh://user@host:/path/repo --key ~/.ssh/id_rsa --restore --all
 
 # Список архивов
-backup.py --repo user@host:/path/repo --list
+backup.py --repo ssh://user@host:/path/repo --list
 
 # Удаление всех архивов
-backup.py --repo user@host:/path/repo --clear-all
+backup.py --repo ssh://user@host:/path/repo --clear-all
 ```
 
 Используй `--password=you_password` для автоматического пароля.
