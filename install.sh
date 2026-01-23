@@ -44,7 +44,7 @@ read -rsp $'\n🔐 Enter Borg passphrase: ' borg_pass
 echo
 
 # 3) SSH URL репозитория
-read -rp $'\n📁 Borg repo (user@host:/path/repo): ' borg_repo
+read -rp $'\n📁 Borg repo (ssh://user@host:/path/repo): ' borg_repo
 
 # 4) Каталог для бэкапа
 read -rp $'\n📂 Backup target [/]: ' backup_target
