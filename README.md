@@ -16,7 +16,8 @@ Supports Docker service control, MySQL/PostgreSQL dumps, system package and serv
 - Package, service, and cron state preservation  
 - Interactive archive listing and restore  
 - Live progress display in terminal  
-- Automatic dependency installation  
+- Automatic dependency installation
+- version 4.9 add `--tag=mytag` for add tags like `2026-Jan-25_15-05-12-mytag`
 
 ***
 
@@ -75,7 +76,8 @@ Logs and state data are stored in `/root/.backup.py` or use `--log`
 - Сохранение и восстановление состояния пакетов и сервисов  
 - Просмотр и выбор архива для восстановления  
 - Отображение прогресса в терминале  
-- Автоматическая установка зависимостей  
+- Автоматическая установка зависимостей
+- в version 4.9 добавлено `--tag=mytag` что добавит в конец описания нужный тэг `2026-Jan-25_15-05-12-mytag`
 
 ***
 
