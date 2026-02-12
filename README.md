@@ -60,6 +60,16 @@ Logs and state data are stored in `/root/.backup.py` or use `--log`
 
 ***
 
+
+```
+mkdir -p /var/log/mysql
+touch /var/log/mysql/error.log
+chown -R mysql:adm /var/log/mysql
+chmod 755 /var/log/mysql
+chmod 640 /var/log/mysql/error.log
+systemctl start mysql
+```
+
 ### Русский
 
 > **backup.py - инструмент автоматизации BorgBackup**
